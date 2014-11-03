@@ -25,7 +25,7 @@ $connection = new mysqli($host, $username, $password);
 		else {
 			
 			echo "Database already exists";
-		}
+		}	
 // the query makes a chart that will allow a maxium of 255 characters to be typed
 // the table post will be added by one each time 
 	$query = $connection->query("CREATE TABLE posts ("
