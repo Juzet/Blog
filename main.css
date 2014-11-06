@@ -1,3 +1,4 @@
+/*stylizes the webpages*/
 body {
 	background-color: black;
 }
@@ -10,6 +11,7 @@ body {
 #one{
 	color: lime;
 }
+/*resizes the webpage when on a certain phone*/
 @media screen and (max-width:320px){
 	body{
 		background-color: orange;
