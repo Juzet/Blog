@@ -1,0 +1,29 @@
+body {
+	background-color: black;
+}
+#title{
+	color: lime;
+}
+#post{
+	color: lime;
+}
+#one{
+	color: lime;
+}
+@media screen and (max-width:320px){
+	body{
+		background-color: orange;
+	}
+	#title{
+		width:100px;
+		height: 100px;
+	}
+	#post{
+		width:100px;
+		height: 100px;
+	}
+	#one{
+		width:100px;
+		height: 100px;
+	}
+}
