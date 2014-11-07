@@ -15,7 +15,7 @@
 		<textarea name="post"></textarea>
 	</div>
 		<!-- allows me to make a submit button -->
-	<div>
+	<div id="submit">
 		<button type="submit">Submit</button>
 	</div>
 </form>

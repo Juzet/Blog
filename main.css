@@ -4,12 +4,19 @@ body {
 }
 #title{
 	color: lime;
+	text-align: center;
 }
 #post{
 	color: lime;
+	text-align: center;
 }
 #one{
 	color: lime;
+	text-align: center;
+}
+#submit{
+	color: lime;
+	text-align: center;
 }
 /*resizes the webpage when on a certain phone*/
 @media screen and (max-width:320px){
@@ -17,15 +24,32 @@ body {
 		background-color: orange;
 	}
 	#title{
-		width:100px;
+		width: 100px;
 		height: 100px;
 	}
 	#post{
-		width:100px;
+		width: 100px;
 		height: 100px;
 	}
 	#one{
-		width:100px;
+		width: 100px;
 		height: 100px;
 	}
 }
+/*@media screen and (max-width:1024px){
+	body{
+		background-color: purple;
+	}
+	#title{
+		width: 500px;
+		height: 500px;
+	}
+	#post{
+		width: 500px;
+		height: 100px;
+	}
+	#one{
+		width: 500px;
+		height: 100px;
+	}
+}*/
