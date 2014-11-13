@@ -18,7 +18,7 @@ body {
 	color: lime;
 	text-align: center;
 }
-/*resizes the webpage when on a certain phone*/
+/*resizes the webpage when on an iPhone 5*/
 @media screen and (max-width:320px){
 	body{
 		background-color: orange;
