@@ -1,7 +1,7 @@
 <!-- creating variables for the post -->
 <?php
-// requiring the database file
-	require_once(__DIR__ . "/../model/database.php");
+// requiring the config file
+	require_once(__DIR__ . "/../model/config.php");
 // this is creating a connection using the mysqli method
 // $host, $username, $password, $database are being stored in the connection
 	$connection = new mysqli($host, $username, $password, $database);

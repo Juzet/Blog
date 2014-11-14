@@ -1,7 +1,7 @@
 <?php
-// whole file is looking for folder model to access database.php 
-require_once(__DIR__ . "/../model/database.php");
-
+// whole file is looking for folder model to access config.php 
+require_once(__DIR__ . "/../model/config.php");
+// this allows us to store information and allows us to update/ change the information
 // function that helps the blog run mysqli calls the variables in database.php
 $connection = new mysqli($host, $username, $password);
 // checking to see if the connection is working 

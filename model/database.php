@@ -1,6 +1,12 @@
-<!-- variables that are used to help the code run and make the coding easier  -->
 <?php
-	$host = "localhost";
-	$username = "root";
-	$password = "root";
-	$database = "blog_db";
+// with this class you remove repitition within the create-db.php page
+// a class is object information that allows you to access the information at any time 
+class Database {
+	private $connection;
+	private $host;
+	private $username;
+	private $password;
+	private $database;
+
+}
+
