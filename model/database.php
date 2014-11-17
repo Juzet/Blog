@@ -9,6 +9,7 @@ class Database {
 	private $database;
 
 	// This is making the class suitable for any initialization that the object may call before it is used
+	// the constructor is executed after the objects are initialized, the purpose is to put the object in a solid state
 	public function__construct($host, $username, $password, $database) {
 		$this->host = $host;
 		$this->username= $username;
