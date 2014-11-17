@@ -8,5 +8,12 @@ class Database {
 	private $password;
 	private $database;
 
+	public function__construct($host, $username, $password, $database) {
+		$this->host = $host;
+		$this->username= $username;
+		$this->password= $password;
+		$this->database= $database;
+	}
+
 }
 
