@@ -16,6 +16,9 @@ class Database {
 		$this->password= $password;
 		$this->database= $database;
 	}
+	// isset is determining if the set variable is set and is not NULL
+	// isset will return false if the variable has been set to NULL
+	// a fucntion is a name given to a block of code that can be executed at any time 
 
 	public function openConnection() {
 		$this->connection - new mysqli($this->host, $this->username, $this->password, $this->database );
