@@ -9,11 +9,15 @@
 // this is inputing the post into the php database and it filters the post as well
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
+
 // this is inserting a post and asking you to insert the title and the post you want to put 
 	$query = $connection->query("INSERT INTO posts SET title = '$title' , post = '$post'");
 // if the query is true it prints sucessfully inserted post
 	if($query) {
 		echo"<p>Successfully inserted post: $title</p>";
+	}
+	else if ($query){
+		echo "<p>The output date: is $date->format('m/d/Y') ?</p>";
 	}
 // if the query is false then the connecton error will pop up
 	else {

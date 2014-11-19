@@ -1,6 +1,6 @@
 /*stylizes the webpages*/
 body {
-	background-image: url("images/car.jpg");
+	background-color: white;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
