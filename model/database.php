@@ -6,39 +6,70 @@ class Database {
 	private $host;
 	private $username;
 	private $password;
-	private $datase;
+	private $database;
+	public $error;
 
 
 	// This is making the class suitable for any initialization that the object may call before it is used
 	// the constructor is executed after the objects are initialized, the purpose is to put the object in a solid state
-	public function__construct($host, $username, $password, $database) {
+	public function __construct($host, $username, $password, $database) {
 		$this->host = $host;
 		$this->username= $username;
 		$this->password= $password;
 		$this->database= $database;
-	}
+
+		$this->connection = new mysqli($host, $username, $password);
+
+		if ($this->connection->connect_error) {
+			die("<p>Error:" . $this->connection->connect_error . "</p>");
+		}
+	
+
+	   $exists = $this->connection->select_db($database);
+
+		if(!$exists) {
+			$query = $this->connection->query("CREATE DATABASE $database");
+
+			if($query)  {
+				echo "<p>Successfully created database:". $database ."</p>";
+			}
+
+			 else {
+				echo "<p>Database already exists</p>";
+			}
+
+		}
+	 }
 	// isset is determining if the set variable is set and is not NULL
 	// isset will return false if the variable has been set to NULL
 	// a fucntion is a name given to a block of code that can be executed at any time 
 
 	public function openConnection() {
-		$this->connection - new mysqli($this->host, $this->username, $this->password, $this->database );
+		$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
 
-		if (this->$connection->connect_error) {
+		if ($this->connection->connect_error) {
 			die("<p>Error:" . $this->connection->connect_error . "</p>");
 		}
-	}
+	  }
+	
 	public function closeConnection(){
 		if(isset ($this->connection)){
-			$this_>connection->close();
+			$this->connection->close();
 		}
 	}
+	// 
+	// the query fuunction is allowing 
 	public function query($string) {
 		$this->openConnection();
 
 		$query = $this->connection->query($string);
 
+		if (!$query) {
+			$this->error = $this->connection->error;
+		}
+
 		$this->closeConnection();
+		
 		return $query;
 	}
 

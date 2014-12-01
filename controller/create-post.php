@@ -11,7 +11,7 @@
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
 
 // this is inserting a post and asking you to insert the title and the post you want to put 
-	$query = $connection->query("INSERT INTO posts SET title = '$title' , post = '$post'");
+	$query = $_SESSION["connection"]->query ("INSERT INTO posts SET title = '$title' , post = '$post'");
 // if the query is true it prints sucessfully inserted post
 	if($query) {
 		echo"<p>Successfully inserted post: $title</p>";
@@ -21,7 +21,7 @@
 	}
 // if the query is false then the connecton error will pop up
 	else {
-		echo"<p>$connection->error</p>";
+		echo"<p>" . $_SESSION["connection"]->error . "</p>";
 	}
 // this is currently closing the connection
-	$connection->close();
+	// $connection->close();
