@@ -16,3 +16,19 @@ require_once(__DIR__ . "/../model/config.php");
 		else {
 			echo "<p>" . $_SESSION ["connection"]->error . "</p>";
 		}
+// setting query equal to session and creating a post in myadmin for the users information
+	$query = $_SESSION ["connection"]->query("CREATE TABLE users ("
+		. "id int(11) NOT NULL AUTO_INCREMENT,"
+		. "username varchar(30) NOT NULL,"
+		. "email varchar(50) NOT NULL,"
+		. "password char(128) NOT NULL,"
+		. "salt char(128) NOT NULL,"
+		. "PRIMARY KEY (id))");
+
+// this checking to see if the query is outputing the data on the webpage
+		if($query) {
+			echo "<p>Successfully created table: users</p>";
+		}
+		else {
+			echo "<p>" . $_SESSION ["connection"]->error . "</p>";
+		}

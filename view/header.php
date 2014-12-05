@@ -9,9 +9,3 @@
 	<title></title>
 </head>
 	<body>
-<?php
-
-	echo "Today is " . date("M-d-y") . "</br>";
-	// echo "Today is " . date("1");
-
-?>

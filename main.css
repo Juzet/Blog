@@ -1,26 +1,41 @@
 /*stylizes the webpages*/
 body {
-	background-color: whitez;
+	background-color: pink;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+#box{
+	background-color: white;
+	height: 50px;
+	width: 300px;
+	background-repeat: no-repeat;
+}
+#apple{
+	background-color: white;
+	height: 300px;
+	width: 400px;
+	background-repeat: no-repeat;
+}
+#one{
+	color: yellow;
+}
 #title{
-	color: white;
+	color: black;
 	text-align: center;
 	font-family: 'Droid Sans', sans-serif;
 }
 #post{
-	color: white;
+	color: black;
 	text-align: center;
 	font-family: 'Droid Sans', sans-serif;
 }
 #one{
-	color: white;
+	color: black;
 	text-align: center;
 	font-family: 'Droid Sans', sans-serif;
 }
 #submit{
-	color: white;
+	color: black;
 	text-align: center;
 }
 /*resizes the webpage when on an iPhone 5*/

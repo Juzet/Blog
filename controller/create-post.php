@@ -1,4 +1,10 @@
 <!-- creating variables for the post -->
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="stylesheet" type="text/css" href="../main.css">
+</head>
+
 <?php
 // requiring the config file
 	require_once(__DIR__ . "/../model/config.php");
@@ -14,14 +20,17 @@
 	$query = $_SESSION["connection"]->query ("INSERT INTO posts SET title = '$title' , post = '$post'");
 // if the query is true it prints sucessfully inserted post
 	if($query) {
-		echo"<p>Successfully inserted post: $title</p>";
+		echo"<div id='box'><p>Title: $title</p></div>";
+		echo"<p>Post: $post</p>";
 	}
 	else if ($query){
-		echo "<p>The output date: is $date->format('m/d/Y') ?</p>";
+		echo "<div id='apple'><p>Inserted post: $post</p></div>";
 	}
 // if the query is false then the connecton error will pop up
 	else {
 		echo"<p>" . $_SESSION["connection"]->error . "</p>";
 	}
 // this is currently closing the connection
-	// $connection->close();
+	// $connection->close();\
+	?>	
+	</html>
