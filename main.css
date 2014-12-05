@@ -4,14 +4,27 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+#body1 {
+	background-color: purple;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 #box{
 	background-color: white;
 	height: 50px;
 	width: 300px;
 	background-repeat: no-repeat;
 }
+#snake {
+	background-color: lime;
+	width: 500px;
+}
+#head {
+	background-color: pink;
+	width: 500px;
+}
 #apple{
-	background-color: white;
+	background-color: orange;
 	height: 300px;
 	width: 400px;
 	background-repeat: no-repeat;

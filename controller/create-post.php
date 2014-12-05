@@ -4,7 +4,10 @@
 <head>
 		<link rel="stylesheet" type="text/css" href="../main.css">
 </head>
-
+<body id="body1">
+	<div id="snake">
+		HEEEADD
+	</div>
 <?php
 // requiring the config file
 	require_once(__DIR__ . "/../model/config.php");
@@ -21,10 +24,10 @@
 // if the query is true it prints sucessfully inserted post
 	if($query) {
 		echo"<div id='box'><p>Title: $title</p></div>";
-		echo"<p>Post: $post</p>";
+		echo"<div id='apple'><p>Post: $post</p></div>";
 	}
 	else if ($query){
-		echo "<div id='apple'><p>Inserted post: $post</p></div>";
+		echo "<p>Inserted post: $post</p>";
 	}
 // if the query is false then the connecton error will pop up
 	else {
@@ -33,4 +36,5 @@
 // this is currently closing the connection
 	// $connection->close();\
 	?>	
+</body>
 	</html>
