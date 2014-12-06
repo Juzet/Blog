@@ -1,0 +1,28 @@
+#body1 {
+	background-color: #E0F8F7;
+}
+#data {
+	text-align: left;
+	color: blue;
+	font-family: 'Yellowtail', cursive;
+	border-bottom: 1px solid gray;
+	font-size: 25px;
+	margin: 0 auto;
+	width: 1000px;
+}
+#box{
+	background-color: purple;
+	height: 50px;
+	width: 700px;
+	background-repeat: no-repeat;
+}
+#head {
+	background-color: pink;
+	width: 500px;
+}
+#apple{
+	background-color: orange;
+	height: 300px;
+	width: 700px;
+	background-repeat: no-repeat;
+}
