@@ -10,5 +10,9 @@
 	$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
 
 
+// echoing the password for now
+	echo $password;
+// salt makes the hashed encrypted password unique id it's the same password they won't have the same has
+	$salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
 
-	echo $email . " - " . $username . " - " . $password;
+	echo $salt;
