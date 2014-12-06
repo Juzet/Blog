@@ -37,8 +37,7 @@
 	else {
 		echo"<p>" . $_SESSION["connection"]->error . "</p>";
 	}
-// this is currently closing the connection
-	// $connection->close();\
+	require_once(__DIR__ . "/../controller/read-posts.php");
 	?>	
 </body>
 	</html>
