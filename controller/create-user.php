@@ -10,9 +10,22 @@
 	$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
 
 
-// echoing the password for now
-	echo $password;
+
 // salt makes the hashed encrypted password unique id it's the same password they won't have the same has
 	$salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
+// hashing the passowrds so that they could be encryted
+	$hashedPassword = crypt($password, $salt);
+// inserting into the users table and then we want to set the email, username, and password 
+// this is setting all these variables to certain assignments
+	$query = $_SESSION["connection"]->query("INSERT INTO users SET "
+		. "email = '$email',"
+		. "username = '$username',"
+		. "password = '$hashedPassword',"
+		. "salt = '$salt'");
 
-	echo $salt;
+	if($query) {
+		echo "Successfully created user: $username";
+	}
+	else {
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
+	}
