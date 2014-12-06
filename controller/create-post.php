@@ -1,14 +1,14 @@
 <!-- creating variables for the post -->
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 		<link rel="stylesheet" type="text/css" href="../post.css">
 		<link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
-</head>
-<body id="body1">
-	<header id="data">
-		<h1> JUZET ARANA </h1>
-	</header>
+	</head>
+	<body id="body1">
+		<header id="data">
+			<h1> JUZET ARANA </h1>
+		</header>
 <?php
 // requiring the config file
 	require_once(__DIR__ . "/../model/config.php");
@@ -36,6 +36,6 @@
 		echo"<p>" . $_SESSION["connection"]->error . "</p>";
 	}
 	require_once(__DIR__ . "/../controller/read-posts.php");
-	?>	
-</body>
-	</html>
+?>	
+	</body>
+</html>

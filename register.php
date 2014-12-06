@@ -1,4 +1,4 @@
-<!-- going into the folder to and showing making the usename password email icons appear -->
+<!-- going into the folders using the directory and they will go into the folders and execute the data -->
 <?php
 	require_once(__DIR__ . "/view/header.php");
 	require_once(__DIR__ . "/view/register-form.php");

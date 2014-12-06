@@ -1,4 +1,5 @@
 <!-- opening the tags -->
+<!-- linking the stylesheet and resizing for the media query -->
 <!DOCTYPE html>
 <html>
 	<head>

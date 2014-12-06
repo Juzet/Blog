@@ -6,11 +6,11 @@ require_once(__DIR__ . "/../model/config.php");
 // the table post will be added by one each time 
 // this data will be stored in the php myadmin data
 	$query = $_SESSION["connection"]->query("CREATE TABLE posts ("
-	. "id int(11) NOT NULL AUTO_INCREMENT,"
-	. "title varchar(255) NOT NULL,"
-	. "post text NOT NULL,"
-	. "DateTime datetime NOT NULL,"
-	. "PRIMARY KEY (id))");
+		. "id int(11) NOT NULL AUTO_INCREMENT,"
+		. "title varchar(255) NOT NULL,"
+		. "post text NOT NULL,"
+		. "DateTime datetime NOT NULL,"
+		. "PRIMARY KEY (id))");
 // the if statement is just making sure the code is running properly
 		if($query) {
 			echo "<p>Successfully create table: posts</p>";
