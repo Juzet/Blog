@@ -9,12 +9,15 @@
 	font-size: 25px;
 	margin: 0 auto;
 	width: 1000px;
+	position: sticky;
+  	top: 0px;
 }
+
 #box{
-	background-color: purple;
 	height: 50px;
 	width: 700px;
 	background-repeat: no-repeat;
+	font-size: 30px;
 }
 #head {
 	background-color: pink;
