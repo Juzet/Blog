@@ -6,8 +6,10 @@
 		<link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
 	</head>
 	<body id="body1">
-		<header id="data">
-			<h1> JUZET ARANA </h1>
+		<header>
+			<div id="data">
+				<h1> JUZET ARANA </h1>
+			<div>
 		</header>
 <?php
 // requiring the config file
@@ -30,6 +32,7 @@
 		echo"<div id='box'><p>Title: $title</p></div>";
 		echo"<div id='apple'><p>Post: $post</p></div>";
 		echo"Posted on: " . $date->format ("m/d/y") . " at " . $time->format("h:i");
+		// echo"<div id='done'> . </div>";
 	}
 // if the query is false then the connecton error will pop up
 	else {
@@ -37,5 +40,9 @@
 	}
 	require_once(__DIR__ . "/../controller/read-posts.php");
 ?>	
+
+	<footer>
+		&copy Juzet Arana
+	</footer>
 	</body>
 </html>
