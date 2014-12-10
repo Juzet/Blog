@@ -1,6 +1,12 @@
 <?php
 // in order to make the website run with certain parameters the webpage needs to function properly
 	require_once(__DIR__ . "/../model/config.php");
+	require_once(__DIR__ . "/../controller/login-verify.php");
+
+	if (!authenticateUser()) {
+		header("Location:" . $path . "index.php");
+		die();
+	}
 ?>
 
 	<div id="one">

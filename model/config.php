@@ -3,6 +3,7 @@
 	require_once(__DIR__ . "/database.php");
 // starting the session that will now store the variable connection
 	session_start();
+	session_regenerate_id(true);
 
 // these are variables that lead to specific destinations in the database
 	$path = "/Blog/";

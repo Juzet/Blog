@@ -1,6 +1,12 @@
 <!-- looking for the config in folder model   -->
 <?php
 	require_once(__DIR__ . "/../model/config.php");
+	require_once(__DIR__ . "/../controller/login-verify.php");
+
+	if (!authenticateUser()) {
+		header("Location:" . $path . "index.php");
+		die();
+	}
 ?>
 <!-- links the link on blog to the page post -->
 <nav>

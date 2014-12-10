@@ -7,7 +7,7 @@ class Database {
 	private $username;
 	private $password;
 	private $database;
-	public $error;
+	public  $error;
 
 
 // This is making the class suitable for any initialization that the object may call before it is used
@@ -39,9 +39,9 @@ class Database {
 
 		}
 	 }
-	// isset is determining if the set variable is set and is not NULL
-	// isset will return false if the variable has been set to NULL
-	// a function is a name given to a block of code that can be executed at any time 
+// isset is determining if the set variable is set and is not NULL
+// isset will return false if the variable has been set to NULL
+// a function is a name given to a block of code that can be executed at any time 
 	public function openConnection() {
 		$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
 
@@ -56,8 +56,8 @@ class Database {
 		}
 	}
 	// 
-	// the query function is allowing  is allowing there to be an open connection
-	// if the query is true then there will be a pop up using the this variable
+// the query function is allowing  is allowing there to be an open connection
+// if the query is true then there will be a pop up using the this variable
 	public function query($string) {
 		$this->openConnection();
 
