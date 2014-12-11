@@ -29,7 +29,9 @@
 		</div>
 <!-- allows me to make a submit button -->
 
-		<div id="submit">
-			<button type="submit">Submit</button>
+		<div>
+			<button type="Submit" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+  				Submit
+			</button>
 		</div>
 	</form>

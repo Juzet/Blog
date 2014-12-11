@@ -1,4 +1,5 @@
 /*stylizes the webpages*/
+@import url(http://fonts.googleapis.com/css?family=Lato:400,100italic);
 body {
 	background-color: pink;
 	background-repeat: no-repeat;
@@ -22,8 +23,8 @@ body {
 	text-align: center;
 	font-family: 'Droid Sans', sans-serif;
 }
-#submit{
-	color: black;
+#btn btn-primary{
+	font-family: 'Lato', sans-serif;
 	text-align: center;
 }
 /*resizes the webpage when on an iPhone 5*/
