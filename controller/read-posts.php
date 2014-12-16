@@ -10,8 +10,10 @@
 	if($result) {
 		while($row = mysqli_fetch_array($result)) {
 			echo "<div class='post'>";
-			echo "<h1>" . $row['title'] . "</h1>";
+			echo "<p id='fake'>";
+			echo "<h2>" . $row['title'] . "</h2>";
 			echo "<br />";
+			echo "</p>";
 			echo "<p>" . $row['post'] . "</h2>";
 			echo "<br/>";
 			echo "<p>" . $row['DateTime'] . "</h1>";
@@ -21,3 +23,4 @@
 
 		}
 	}
+?>
