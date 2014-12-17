@@ -22,6 +22,7 @@
 		echo"<p>Posted on: " . $date->format ("m/d/y") . " at " . $time->format("h:i");
 	}
 // if the query is false then the connecton error will pop up
+// session will check everything over but they will pop up as mistakes if the code is wrong
 	else {
 		echo"<p>" . $_SESSION["connection"]->error . "</p>";
 	}

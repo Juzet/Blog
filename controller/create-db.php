@@ -20,6 +20,7 @@ require_once(__DIR__ . "/../model/config.php");
 			echo "<p>" . $_SESSION ["connection"]->error . "</p>";
 		}
 // setting query equal to session and creating a post in myadmin for the users information
+// setting session variables functions
 	$query = $_SESSION ["connection"]->query("CREATE TABLE users ("
 		. "id int(11) NOT NULL AUTO_INCREMENT,"
 		. "username varchar(30) NOT NULL,"
