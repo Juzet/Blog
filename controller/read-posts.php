@@ -24,3 +24,4 @@
 		}
 	}
 ?>
+<!-- the echo is setting rows in a specific way -->
