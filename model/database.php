@@ -66,7 +66,7 @@ class Database {
 		if (!$query) {
 			$this->error = $this->connection->error;
 		}
-// this is closing the connection
+// this is closing the connection and turning back to the query
 		$this->closeConnection();
 		
 		return $query;

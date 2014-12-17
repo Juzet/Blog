@@ -1,4 +1,3 @@
-<!-- creating a variable called $path -->
 <?php
 	require_once(__DIR__ . "/database.php");
 // starting the session that will now store the variable connection
