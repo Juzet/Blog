@@ -4,15 +4,15 @@ require_once(__DIR__ . "/../model/config.php");
 ?>
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="post.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-</head>
-<body class="shot">
-<div id="what">
-Register
-</div>
+	<head>
+		<link rel="stylesheet" type="text/css" href="post.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	</head>
+	<body class="shot">
+		<div id="what">
+			Register
+		</div>
 	<form method ="post" action ="<?php echo $path . "controller/create-user.php"; ?>">
 <!-- a div box that is storing teh email in a box with the words in plain text -->
 		<div class="email">
