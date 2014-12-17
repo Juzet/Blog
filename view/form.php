@@ -8,30 +8,28 @@
 		die();
 	}
 ?>
-
+<!-- creating a div box for the blog post -->
 	<div id="one">
-		<h1>Create a Blog Post</h1>
+		Create a Blog Post
 	</div>
 
-	<form method ="post" action ="<?php echo $path . "controller/create-post.php"; ?>">
-		<div id="title">
+<form method ="post" action ="<?php echo $path . "controller/create-post.php"; ?>">
+	<div id="title">
 <!-- labels the boxes -->
-			<label for="title">Title:</label>
+		<label for="title">Title:</label>
 <!-- allows you to put a single line -->
-			<input type="text" name="title"/>
-		</div>
-
-		<div id="post">
+		<input type="text" name="title"/>
+	</div>
+	<div id="post">
 <!-- lables the post box -->
-			<label for="post">Post: </label>
+		<label for="post">Post: </label>
 <!-- allows you input multiple lines -->
-			<textarea name="post"></textarea>
-		</div>
-<!-- allows me to make a submit button -->
-
-		<div>
-			<button type="Submit" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-  				Submit
-			</button>
-		</div>
-	</form>
+		<textarea name="post"></textarea>
+	</div>
+<!-- allows me to make a submit button and design the webpage -->
+	<div>
+		<button type="Submit" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+  			Submit
+		</button>
+	</div>
+</form>
