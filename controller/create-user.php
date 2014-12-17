@@ -22,10 +22,11 @@
 		. "username = '$username',"
 		. "password = '$hashedPassword',"
 		. "salt = '$salt'");
-
+ // this is going to be the echo that pops up when the code is correct
 	if($query) {
 		echo "Successfully created user: $username";
 	}
+// this is going to be the code popping up if the code is incorrect
 	else {
 		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
